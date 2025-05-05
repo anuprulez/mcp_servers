@@ -9,7 +9,6 @@ async def main():
     # Load environment variables
     load_dotenv()
 
-
     # Create MCPClient from configuration dictionary
     client = MCPClient.from_config_file(
         os.path.join("browser_mcp.json")
