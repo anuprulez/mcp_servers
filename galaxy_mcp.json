@@ -1,0 +1,23 @@
+{
+    "mcpServers": {
+      "Galaxy": {
+        "command": "uv",
+        "args": [
+          "run",
+          "--with",
+          "bioblend",
+          "--with",
+          "mcp[cli]",
+          "--with",
+          "requests",
+          "mcp",
+          "run",
+          "/home/anup/mcp_code/galaxy_mcp/galaxy-mcp/mcp-server-galaxy-py/main.py"
+        ],
+        "env": {
+          "GALAXY_URL": "https://usegalaxy.eu/",
+          "GALAXY_API_KEY": "debc63d7ad5e6c3da3472385b6078a78"
+        }
+      }
+    }
+  }

@@ -11,7 +11,7 @@ async def main():
 
     # Create MCPClient from configuration dictionary
     client = MCPClient.from_config_file(
-        os.path.join("browser_mcp.json")
+        os.path.join("galaxy_mcp.json")
     )
 
     # Create LLM
@@ -22,7 +22,7 @@ async def main():
 
     # Run the query
     result = await agent.run(
-        "Find the best restaurant in San Francisco",
+        "Get the login information of the logged in user from Galaxy MCP and also provide the details of the tool tabpfn"
     )
     print(f"\nResult: {result}")
 
