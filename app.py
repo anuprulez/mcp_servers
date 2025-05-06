@@ -22,7 +22,11 @@ async def main():
 
     # Run the query
     result = await agent.run(
-        "Get the login information of the logged in user from Galaxy MCP and also provide the details of the tool tabpfn"
+        "Perform these tasks: \
+         1. Create a history with name 'MCP_History'. \
+         2. Use the above history 'MCP_History' and upload train dataset from '/home/anup/Downloads/classification_local_train_rows.tabular' and return dataset id \
+         3. Use the above history 'MCP_History' and upload test data from '/home/anup/Downloads/classification_local_test_rows.tabular' and return dataset id"
+         #3. Use train and test dataset IDs from the previous step and run the latest version of the TabPFN (tool_id tabpfn) tool on the uploaded train and test datasets in 'MCP_history' history ."
     )
     print(f"\nResult: {result}")
 
