@@ -11,7 +11,7 @@ async def main():
 
     # Create MCPClient from configuration dictionary
     client = MCPClient.from_config_file(
-        os.path.join("galaxy_mcp.json")
+        os.path.join("config/galaxy_mcp.json")
     )
 
     # Create LLM
