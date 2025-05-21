@@ -30,7 +30,7 @@ async def main():
     )'''
 
     result = await agent.run(
-        "Fetch the logged in user information from the MCP server. Return the user ID and the user name."
+        "Fetch the logged in user information from the MCP server. Return the user ID and the user name. Additionally, return details of tool with id 'tabpfn'."
     )
 
     print(f"\nResult: {result}")

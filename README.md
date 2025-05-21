@@ -7,7 +7,7 @@ export GALAXY_URL=https://usegalaxy.eu/
 export GALAXY_API_KEY=<galaxy_api_key>
 ```
 
-### Step 2: Run Galaxy MCP server
+### Step 2: Run Galaxy MCP server: https://github.com/galaxyproject/galaxy-mcp/tree/main
 
 ```
 mcp run main.py
